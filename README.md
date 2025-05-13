@@ -47,7 +47,11 @@ npm i
 
 4. Configurar la base de datos o levantar docker compose:
 
-   - Opción docker: docker-compose up -d
+   - Opción docker:
+
+   ```
+   docker-compose up -d
+   ```
 
    Ó
 
