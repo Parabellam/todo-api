@@ -11,7 +11,7 @@ API RESTful construida con NestJS para la gestión de tareas personales, desarro
 - Base de datos PostgreSQL
 - Validación de datos
 - Manejo de errores
-- Contenerización con Docker
+- Contenerización con Docker (DB)
 
 ## Requisitos
 
@@ -25,7 +25,7 @@ API RESTful construida con NestJS para la gestión de tareas personales, desarro
 1. Clonar el repositorio:
 
 ```bash
-git clone <url-del-repositorio>
+git clone https://github.com/Parabellam/todo-api.git
 cd todo-api
 ```
 
@@ -37,14 +37,13 @@ npm i
 
 3. Configurar variables de entorno:
    Crear un archivo `.env` en la raíz del proyecto con las siguientes variables:
+
    ```env
    DATABASE_URL="postgresql://stiven:123456@localhost:5499/nestdb?schema=public"
    JWT_SECRET=stiven-jwt-example
    API_KEY=stiven-api-key-example
    PORT=3000
    ```
-
-````
 
 4. Configurar la base de datos o levantar docker compose:
 
@@ -60,7 +59,7 @@ npm i
 
 ```bash
 npm run migration:run
-````
+```
 
 6. Iniciar la aplicación:
 
